@@ -1,3 +1,4 @@
 name: jonnie.io
 markdown: redcarpet
 pygments: true
+permalink: /blog/:title
