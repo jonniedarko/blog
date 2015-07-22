@@ -47,15 +47,16 @@ Next we need to get the node packages to build, I went with v0.10.22 as I knew i
 ```
 
 Next we need to mov the the node directory, run the configuration script, build it and then install it
+
 ```bash
-  #Move into directory
-  cd node-v0.10.22
-  #Run the configuration script
-  ./configure
-  #Build it
-  make
-  #Install Node
-  sudo make install
+   #Move into directory
+   cd node-v0.10.22
+   #Run the configuration script
+   ./configure
+    #Build it
+   make
+   #Install Node
+   sudo make install
 ```
 
 The Configuration script just sets up what ever enviroment variables required and performs checks required to build Node for our platform
