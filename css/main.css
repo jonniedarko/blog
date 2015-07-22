@@ -28,7 +28,7 @@ body {
 #blog-header{
   padding-left: 60px;
 }
-text-muted > a, text-muted > a:hover, text-muted > a:visited{
+.text-muted > a, .text-muted > a:hover, .text-muted > a:visited{
   color: #999;
   text-decoration: none;
 }
