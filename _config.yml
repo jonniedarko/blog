@@ -1,7 +1,5 @@
 name: jonnie.io
-markdown: redcarpet
+markdown: redcarpet2
 pygments: true
 baseurl: /blog
-redcarpet: 
-	extensions:['fenced_code_blocks']
 
