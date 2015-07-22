@@ -28,6 +28,11 @@ body {
 #blog-header{
   padding-left: 60px;
 }
+text-muted > a, text-muted > a:hover, text-muted > a:visited{
+  color: #999;
+  text-decoration: none;
+}
+
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
   margin-top: 0;
