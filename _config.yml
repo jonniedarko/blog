@@ -2,3 +2,6 @@ name: jonnie.io
 markdown: redcarpet
 pygments: true
 baseurl: /blog
+redcarpet: 
+	extensions:['fenced_code_blocks']
+
