@@ -1,5 +1,5 @@
 name: jonnie.io
-markdown: redcarpet2
+markdown: redcarpet
 pygments: true
 baseurl: /blog
 
