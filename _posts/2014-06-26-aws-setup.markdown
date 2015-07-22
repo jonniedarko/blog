@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "AWS Setup!"
+date:   2014-06-24 12:18:15
+categories: first update
+---
 As part of our Maker 2014 project we decided to utilise an AWS server [Martin]() had signed up to. While we will probably end up using a local server on the day we thought it was a good opportunity to give AWS a test run. As well as giving us a way to share an environment while working as a distributed team, the process of setting up the AWS will server to Document the setup we require for our project. The Aim would be to later create a script that does all the installs and setups for us.
 
 **Note: at the time of writing, this is a work in progress and I hope to keep it updated**
