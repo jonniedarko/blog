@@ -15,6 +15,7 @@ So what do we need to install & setup?
 
 <a name="beforestart"></a>
 ###Before we start
+
 Lets make sure everything is update on our system using `apt-get`:
 
 ```bash
@@ -43,7 +44,8 @@ Next we need to get the node packages to build, I went with v0.10.22 as I knew i
    wget http://nodejs.org/dist/v0.10.22/node-v0.10.22.tar.gz
    #unarchive it
    tar -xvzf node-v0.10.22.tar.gz
-```   
+```
+
 Next we need to mov the the node directory, run the configuration script, build it and then install it
 ```bash
   #Move into directory
