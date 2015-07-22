@@ -141,3 +141,9 @@ body {
 .post pre.terminal code {
   background-color: #333;
 }
+
+/* Scale Images */
+.post > p > img {
+    max-width: 100%;
+  max-height: 100%;
+}
