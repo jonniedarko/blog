@@ -5,9 +5,6 @@ date:   2014-07-07 12:00:00
 categories: node rest express
 ---
 
-Creating a Node Rest
-===============
-
 ##What is REST?
 **REST** (Representational State Transfer) is an architecture style for designing networked applications. It Relies on Stateless, Client-Server, Cacheable Communicationjs Protocol and is Most often done so over HTTP.
 It allows CRUD (Create, Read, Update & Delete) Operations over HTTP Requests using  `GET`, `POST`, `PUT` &, `DELETE`.

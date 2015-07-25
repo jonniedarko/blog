@@ -5,8 +5,6 @@ date:   2014-07-19 12:00:00
 categories: node rest express
 ---
 
-Validation and Securing Passwords in Node.js
-=============================================
 This Post Continues on from the [pervious post](http://blog.jonnie.io/creating-a-restful-api-with-node-js/) with the code continuing on from [this commit](https://github.com/jonniedarko/Node-Resful-Api/commit/1abb749e572aaf2536c942a43026fb2acc9c7e28). We currently have a simple RESTful service to create, delete and update users, but right now we are not enforcing any rules as to what can be submitted. One of the most important steps in making any service secure and trustworthy is Validation. This could mean making sure usernames are unique, only contain certain characters or passwords are long enough and not a regular insecure password like  "password" or "test".
 
 There are a number of ways to enforce rules. Some require the developer to manually create rules, others are built in and only require activation. 
