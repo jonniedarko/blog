@@ -70,3 +70,5 @@ Helping others not only feels good but it’s also rewarding in a very real way 
 ![social_cycle_team](https://cloud.githubusercontent.com/assets/3673943/18788291/54cdefce-8174-11e6-94e6-75f60f7af2f1.jpg)<br/>
 Billy (Product Design), Silvia (Experience Designer) <br />
 Dave (Hardware Engineer), Victor & John (Software Engineers)
+
+Arduino setup and our Iconic Mobile App can be found on [Github](https://github.com/global-urban-datafest/social-cycle)
