@@ -1,4 +1,22 @@
 name: jonnie.io
-markdown: kramdown
-highlighter: rouge
 baseurl: /blog
+markdown: kramdown
+kramdown:
+  input: GFM
+
+timezone: UTC
+
+excerpt_separator: <!--more-->
+
+highlighter: rouge
+
+safe: true
+lsi: false
+
+exclude: [src, .editorconfig, .gitignore, CNAME, Gemfile, Gemfile.lock, README.md]
+
+gems:
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from
