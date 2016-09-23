@@ -29,10 +29,13 @@ In Phpstorm (version 2016.1.2) In preferences `->` Languages & Frameworks `->` P
 
 host = dtest.xxx.com, port=80 , Debugger = Xdebug<br> 
 Use path mappings is checked and I have<br>
- - File/Directory set to `/Users/<myname>/projectx/server`<br>
- - Absolute path on the server is set to `/projectx/server`
+ - _File/Directory_ set to `/Users/<myname>/projectx/server`<br>
+ - _Absolute path_ on the server is set to `/projectx/server`
  
-I have tried setting the `xdebug.remote_host` to my macs ip obtained from ifconfig as well as trying the ip in `/Users/<myname>/Library/Containers/com.docker.docker/Data/database/com.docker.driver.amd64-linux/slirp/host`
+I have tried setting the `xdebug.remote_host` to my macs ip obtained from ifconfig as well as trying the ip in 
+```
+/Users/<myname>/Library/Containers/com.docker.docker/Data/database/com.docker.driver.amd64-linux/slirp/host
+```
 
 But I could not hit a breakpoint , I even tried `xdebug_break()` to be sure it wasn't an issue with Phpstorm.
 
@@ -50,7 +53,10 @@ xdebug.idekey="PHPSTORM"
 xdebug.remote_port=9000
 xdebug.remote_host="192.168.65.1"
 xdebug.remote_connect_back=0
-````
-where 192.168.65.1 was docker host ip found in ~/Library/Containers/com.docker.docker/Data/database/com.docker.driver.amd64-linux/slirp/host
+```
+where 192.168.65.1 was docker host ip found in 
+```
+~/Library/Containers/com.docker.docker/Data/database/com.docker.driver.amd64-linux/slirp/host
+```
 
 I Also had to set the idekey correctly in the chrome extension, in my case PHPSTORM. With this I no longer required the ssh tunnel
