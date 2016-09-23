@@ -1,4 +1,4 @@
 name: jonnie.io
 markdown: redcarpet
-pygments: true
+highlighter: rouge
 baseurl: /blog
