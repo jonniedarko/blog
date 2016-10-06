@@ -36,6 +36,7 @@ html,body,.container {
 
 .nav {
     background-color: #428bca
+    padding-left:20px;
 }
 .nav h1 {
     color: white
@@ -43,7 +44,7 @@ html,body,.container {
 .nav strong {
     color: white
 }
-.nav a {
+.nav a, .nav a:link, .nav a:active {
     color: white
 }
 .nav a:hover {
