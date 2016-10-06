@@ -48,6 +48,7 @@ export class MaterialModule {
 ```
 
 And now in my I simple need to import on single module into my `app.module`. But I thought, why stop there and so I also did this with my own "pure" components and my views. The views Module is particularly interesting as I was able to put the routing here too. Check it out below:
+
 ```js
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
