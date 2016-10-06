@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<h2>{{ page.title }}</h2>
+<p class="meta">{{ page.date | date_to_string }}</p>
+
+<div class="post">
+{{ content }}
+<br/>
+<p>By John<p>
+<p> <a href="https://plus.google.com/117240300413882981184?rel=author">follow me on Google+</a></p>
+<br/>
+<div id="comments"></div>
+</div>
+<!-- Google+ comments -->
+<script>
+var comments_width = '624';
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ // some code..
+ var width = '324';
+}
+gapi.comments.render('comments', {
+    href: window.location,
+    width: comments_width,//'324',
+    first_party_property: 'BLOGGER',
+    view_type: 'FILTERED_POSTMOD'
+});
+</script>

@@ -32,7 +32,8 @@ Use path mappings is checked and I have<br>
  - _File/Directory_ set to `/Users/<myname>/projectx/server`<br>
  - _Absolute path_ on the server is set to `/projectx/server`
  
-I have tried setting the `xdebug.remote_host` to my macs ip obtained from ifconfig as well as trying the ip in 
+I have tried setting the `xdebug.remote_host` to my macs ip obtained from ifconfig as well as trying the ip in
+
 ```
 /Users/<myname>/Library/Containers/com.docker.docker/Data/database/com.docker.driver.amd64-linux/slirp/host
 ```
@@ -46,6 +47,7 @@ ssh -R 9000:localhost:9000 root@dtest.xxx.com -p:12
 ```
 
 But I wasn't happy with this, it meant I need ssh set up in my container.I eventually figured out that my xdebug settings in docker should be
+
 ```
 xdebug.enable=1
 xdebug.remote_enable = 1
@@ -54,7 +56,9 @@ xdebug.remote_port=9000
 xdebug.remote_host="192.168.65.1"
 xdebug.remote_connect_back=0
 ```
+
 where 192.168.65.1 was docker host ip found in 
+
 ```
 ~/Library/Containers/com.docker.docker/Data/database/com.docker.driver.amd64-linux/slirp/host
 ```
