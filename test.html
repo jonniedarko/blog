@@ -20,40 +20,40 @@
     <body>
 
 		<div class="container">
+			<div class="row">
+				<div class="col-sm-2 no-float nav">
+					<h1>Jonnie</h1>
+					<img id="about" src="img/logo.jpg" height="75px" width="75px" /><br />	
 
-			<div class="col-sm-2 no-float nav">
-				<h1>Jonnie</h1>
-				<img id="about" src="img/logo.jpg" height="75px" width="75px" /><br />	
-
-				<strong>navigation</strong><br />
-				<a href="{{ site.baseurl }}/">home</a> <br />
-					<a class="about" href="{{ i.url }}">{{ i.text }}</a><br />
-					<a class="about" href="{{ i.url }}">{{ i.text }}</a><br />
-				
-				<div id="about">
-					<strong>about</strong><br />
-					about me lalala
-				</div>
-			</div>
-
-			<div class="col-sm-10 no-float right-padding-50">
-				
-				<h1>Title</h1>
-				<span class="time">34 Dec</span>
-
-				<div class="content">
-					<div class="post">This is the main content lalallalalalallalalalalalThis is the main content lalallalalalallalalalalalThis is the main content lalallalalalalalalalThis is the main content lalallalalalallalalalalalThis is the main content lalallalalalallalalalalalThis is the main content lalallalalalallalalalalalThis is the main content lalallalallalallalalalalal</div>
+					<strong>navigation</strong><br />
+					<a href="{{ site.baseurl }}/">home</a> <br />
+						<a class="about" href="{{ i.url }}">{{ i.text }}</a><br />
+						<a class="about" href="{{ i.url }}">{{ i.text }}</a><br />
+					
+					<div id="about">
+						<strong>about</strong><br />
+						about me lalala
+					</div>
 				</div>
 
-				
-				<footer>
-					&copy; {{ site.name }}
-					{% if site.github %} 
-						- <a href="{{ site.github }}">{{ site.github }}</a>
-					{% endif %}
-				</footer>
+				<div class="col-sm-10 no-float right-padding-50">
+					
+					<h1>Title</h1>
+					<span class="time">34 Dec</span>
+
+					<div class="content">
+						<div class="post">This is the main content lalallalalalallalalalalalThis is the main content lalallalalalallalalalalalThis is the main content lalallalalalalalalalThis is the main content lalallalalalallalalalalalThis is the main content lalallalalalallalalalalalThis is the main content lalallalalalallalalalalalThis is the main content lalallalallalallalalalalal</div>
+					</div>
+
+					
+					<footer>
+						&copy; {{ site.name }}
+						{% if site.github %} 
+							- <a href="{{ site.github }}">{{ site.github }}</a>
+						{% endif %}
+					</footer>
+				</div>
 			</div>
-		
 		</div>
 		
 	<!-- Bootstrap core JavaScript
