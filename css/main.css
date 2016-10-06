@@ -39,16 +39,16 @@ html,body,.container {
     padding-left:20px;
 }
 .nav h1 {
-    color: white
+    color: white;
 }
 .nav strong {
-    color: white
+    color: white;
 }
 .nav a, .nav a:link, .nav a:active {
-    color: white
+    color: white;
 }
 .nav a:hover {
-    color: white
+    color: white;
     text-decoration: underline;
 }
 /**
@@ -57,7 +57,7 @@ html,body,.container {
  * //////////////////////////
  */
 .right-padding-50{
-    padding-right: 50px
+    padding-right: 50px;
 }
 
 span.time {
