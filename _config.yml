@@ -1,4 +1,5 @@
 name: jonnie.io
+github: https://github.com/jonniedarko
 baseurl: /blog
 markdown: redcarpet
 highlighter: pygments
