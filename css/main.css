@@ -7,16 +7,58 @@ body {
     color: #424242;
 }
 
+html,body,.container {
+    height:100%;
+}
+.container {
+    display:table;
+    width: 100%;
+    margin: -50px 0 10px 0;
+    padding: 50px 0 0 0; /*set left/right padding according to needs*/
+    box-sizing: border-box;
+}
+
+.row {
+    height: 100%;
+    display: table-row;
+}
+
+.row .no-float {
+  display: table-cell;
+  float: none;
+}
+
 @media (min-width: 768px) {
   .container {
-    max-width: 730px;
+    /*max-width: 730px;*/
   }
+}
+
+.nav {
+    background-color: #428bca
+}
+.nav h1 {
+    color: white
+}
+.nav strong {
+    color: white
+}
+.nav a {
+    color: white
+}
+.nav a:hover {
+    color: white
+    text-decoration: underline;
 }
 /**
  * //////////////////////////
  * Font and link declarations
  * //////////////////////////
  */
+.right-padding-50{
+    padding-right: 50px
+}
+
 span.time {
     color: #ADADAD;
     margin-bottom: 5px;
@@ -28,6 +70,8 @@ h1 {
     color: #696969;
     margin-bottom: 10px;
 }
+
+
 
 h2 {
     font-weight: normal;
