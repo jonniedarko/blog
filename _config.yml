@@ -1,18 +1,7 @@
 name: jonnie.io
 baseurl: /blog
 markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
-
-timezone: UTC
-
-excerpt_separator: <!--more-->
-
-highlighter: rouge
-
-safe: true
-lsi: false
-
+highlighter: pygments
 exclude: [src, .editorconfig, .gitignore, CNAME, Gemfile, Gemfile.lock, README.md]
 
 gems:
