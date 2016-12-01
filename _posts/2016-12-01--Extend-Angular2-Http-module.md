@@ -26,6 +26,26 @@ import {Http,
 } from "@angular/http";
 
 import {Observable} from 'rxjs/Observable';
+// this is a straight duplicat from Angular as not exposed
+function mergeOptions(
+    defaultOpts: BaseRequestOptions, providedOpts: RequestOptionsArgs, method: RequestMethod,
+    url: string): RequestOptions {
+  const newOptions = defaultOpts;
+  if (providedOpts) {
+    // Hack so Dart can used named parameters
+    return newOptions.merge(new RequestOptions({
+      method: providedOpts.method || method,
+      url: providedOpts.url || url,
+      search: providedOpts.search,
+      headers: providedOpts.headers,
+      body: providedOpts.body,
+      withCredentials: providedOpts.withCredentials,
+      responseType: providedOpts.responseType
+    }));
+  }
+
+  return newOptions.merge(new RequestOptions({method, url}));
+}
 
 @Injectable()
 export class HttpClient extends Http {
@@ -53,9 +73,19 @@ export class HttpClient extends Http {
   }
 
 
-  request(url: string|Request, options?: RequestOptionsArgs): Observable<Response> {
-    options = this._setCustomHeaders(options);
-    return super.request(url, options)
+    request(req: string|Request, options?: RequestOptionsArgs): Observable<Response> {
+    // this just take into account a request(url) call where url is a string
+    // that way we can always attach the Authorization header
+    if (typeof req === 'string') {
+      options = this._setCustomHeaders(options);
+      return super.request(new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Get, <string>req)));
+    } else if (req instanceof Request) {
+      options = this._setCustomHeaders(options);
+      return super.request(new Request(mergeOptions(this._defaultOptions, options, req.method, req.url)))
+    } else {
+      throw new Error('First argument must be a url string or Request instance.');
+    }
+
   }
 }
 ```
