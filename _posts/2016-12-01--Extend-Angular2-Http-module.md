@@ -27,7 +27,7 @@ import {Http,
 
 import {Observable} from 'rxjs/Observable';
 
-// this is a straight copy and past from Angular 2 Http as this function is not exposed
+// this is a straight copy and past from Angular 2 Http as this function is not exposed but saves us implementing
 function mergeOptions(
     defaultOpts: BaseRequestOptions, providedOpts: RequestOptionsArgs, method: RequestMethod,
     url: string): RequestOptions {
