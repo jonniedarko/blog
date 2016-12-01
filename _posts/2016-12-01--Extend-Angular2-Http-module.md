@@ -16,7 +16,14 @@ or extend the headers or what ever other options we want.
 
 ```ts
 import {Injectable} from "@angular/core";
-import {Http, Headers, RequestOptionsArgs, Request, Response, ConnectionBackend, RequestOptions} from "@angular/http";
+import {Http, 
+        Headers, 
+        RequestOptionsArgs, 
+        Request, 
+        Response, 
+        ConnectionBackend, 
+        RequestOptions
+} from "@angular/http";
 
 import {Observable} from 'rxjs/Observable';
 
@@ -82,5 +89,7 @@ export class AppModule {
   }
 }
 ```
+
+For Reference checkout the source for [Http](https://github.com/angular/angular/blob/master/modules/%40angular/http/src/http.ts) and the [Http Module](https://github.com/angular/angular/blob/master/modules/%40angular/http/src/http_module.ts)
 
 
