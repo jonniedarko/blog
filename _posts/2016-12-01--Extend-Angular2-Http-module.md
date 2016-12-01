@@ -26,13 +26,14 @@ import {Http,
 } from "@angular/http";
 
 import {Observable} from 'rxjs/Observable';
-// this is a straight duplicat from Angular as not exposed
+
+// this is a straight copy and past from Angular 2 Http as this function is not exposed
 function mergeOptions(
     defaultOpts: BaseRequestOptions, providedOpts: RequestOptionsArgs, method: RequestMethod,
     url: string): RequestOptions {
   const newOptions = defaultOpts;
   if (providedOpts) {
-    // Hack so Dart can used named parameters
+
     return newOptions.merge(new RequestOptions({
       method: providedOpts.method || method,
       url: providedOpts.url || url,
