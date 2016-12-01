@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Extend Angular 2 Http"
-date:   2016-10-01 12:18:15
+date:   2016-12-01 19:08:13
 categories: angular2 http headers
 ---
 Often we need to set custom headers in our ajax requests and while in Angular2 we can pass these headers as options to 
