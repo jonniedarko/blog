@@ -5,6 +5,30 @@ date:   2016-10-01 12:18:15
 categories: angular2 material
 ---
 
+
+### Update Nov 2016 ##
+While this approach can still be useful for other modules or dependiences it is no longer required for Angular2 Material, now we can just use the `MaterialModule.forRoot()` function in out imports.
+```
+...
+//import { MaterialModule} from '../material'; // this can be replaced with
+import { MaterialModule} from '@angular/material';
+...
+
+@NgModule({
+  imports:[
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserModule,
+    MaterialModule.forRoot(),
+    routing
+  ],
+  declarations: VIEW_DECLARATIONS,
+  providers: VIEW_PROVIDERS
+})
+
+```
+** end update **
+
 So I recently jumped head 1st into angular 2 and have really tried to embrace the recent modularization push with `@NgModule` and have been trying to reduce the dependencies within my app while trying to keep things as reuseable and testable as possible. With that in mind and the fact that I was starting to find my AppComponent was getting very large and distracting to look at with all my different imports I decided to break up my componets into different modules. It started with `@angular2-material`. They have conveniently packaged each of the Material design components into their own modules but I took it a step further by wrapping this into a `Material-Module`.
 
 ```js
