@@ -52,9 +52,8 @@ export class HttpClient extends Http {
   }
 }
 ```
-
-Now in our Application's module we can override the `Http` provider Providers I was able to use a custom Factory to provide 
-our `HttpClient` as `Http` throughout the rest of the module (our app)
+In Angular the `http` provider is provided using a factory. So we will do the exact same the only difference is our factory will return a new HttpClient (which is an extended Http) instead of angulars Http.
+Now in our Application's every time we inject Http, our custom HttpClient will be provided and noting special needs to be done
 
 ```ts
 import { RequestOptions, Http, XHRBackend} from '@angular/http';
@@ -83,5 +82,5 @@ export class AppModule {
   }
 }
 ```
-now I don't need to declare every Http method and can use http as normal throughout my application.
+
 
