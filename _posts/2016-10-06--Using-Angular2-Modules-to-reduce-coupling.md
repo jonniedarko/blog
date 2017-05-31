@@ -8,6 +8,7 @@ categories: angular2 material
 
 ### Update Nov 2016 ##
 While this approach can still be useful for other modules or dependiences it is no longer required for Angular2 Material, now we can just use the `MaterialModule.forRoot()` function in out imports.
+
 ```
 ...
 //import { MaterialModule} from '../material'; // this can be replaced with
