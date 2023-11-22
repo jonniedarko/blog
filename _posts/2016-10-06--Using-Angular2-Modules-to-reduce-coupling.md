@@ -28,7 +28,8 @@ import { MaterialModule} from '@angular/material';
 })
 
 ```
-** end update **
+
+**end update**
 
 So I recently jumped head 1st into angular 2 and have really tried to embrace the recent modularization push with `@NgModule` and have been trying to reduce the dependencies within my app while trying to keep things as reuseable and testable as possible. With that in mind and the fact that I was starting to find my AppComponent was getting very large and distracting to look at with all my different imports I decided to break up my componets into different modules. It started with `@angular2-material`. They have conveniently packaged each of the Material design components into their own modules but I took it a step further by wrapping this into a `Material-Module`.
 
